@@ -1,0 +1,159 @@
+.wrap {
+  background-image: url("https://iili.io/F0a3JbS.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+.header {
+  border-bottom: 1px solid rgba(233, 190, 140, 0.489);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 40px 0 40px;
+}
+.logo {
+  width: 150px;
+}
+.navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+.textNavMenu {
+  font-size: 24px;
+  color: rgba(233, 189, 141, 1);
+  font-family: "inter";
+  font-weight: bolder;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+}
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.title {
+  color: rgba(233, 189, 141, 1);
+  font-size: 32px;
+  font-family: "inter";
+}
+.text {
+  color: rgba(245, 245, 245, 1);
+  font-size: 20px;
+  font-family: "Poppins";
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.iconPayment {
+  width: 90px;
+  height: 55px;
+}
+.textFooter {
+    text-align: center;
+    color: rgba(115, 115, 115, 1);
+    font-size: 24px;
+    font-family: "inter";
+}
+@media (max-width:1024px) {
+  .header {
+  padding: 0 30px 0 30px;
+}
+  .logo {
+  width: 120px;
+}
+.textNavMenu {
+  font-size: 22px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+}
+@media (max-width:768px) {
+  .wrap {
+  height: 100%;
+  padding: 0 0 10px 0;
+}
+.header{
+  height: 55px;
+  
+}
+  .logo {
+    width: 90px;
+  }
+  .navMenu {
+  width: 220px;
+}
+.textNavMenu {
+  font-size: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.title {
+  font-size: 20px;
+}
+.text {
+  font-size: 15px;
+}
+.iconPayment {
+  width: 45px;
+  height:25px;
+}
+.textFooter {
+    font-size: 12px;
+    margin: 0;
+}
+}
+@media (max-width:480px) {
+  .wrap {
+  height: 100%;
+  padding: 0 0 8px 0;
+}
+.header{
+  height: 45px;
+   padding: 0 10px 0 10px;
+}
+  .logo {
+    width: 80px;
+  }
+  .navMenu {
+  width: 180px;
+}
+.textNavMenu {
+  font-size: 15px;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+.title {
+  font-size: 16px;
+}
+.text {
+  font-size: 10px;
+}
+.iconPayment {
+  width: 25px;
+  height:15px;
+}
+.textFooter {
+    font-size: 8px;
+    margin: 0;
+}
+}

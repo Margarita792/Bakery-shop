@@ -1,0 +1,96 @@
+.wrapSort {
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-between;
+margin: 0 30px 20px 30px;
+height: 40px;
+}
+.select {
+    font-size: 18px;
+    font-family: "inter";
+    font-weight:normal;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+}
+.input {
+     border: 1px solid #ccc;
+     font-size: 18px;
+    font-family: "inter";
+    font-weight:normal;
+    border-radius: 4px;
+    width: 190px;
+    height: 30px;
+    outline: none;
+}
+.wrapCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.imgCards {
+  width: 250px;
+  height: 210px;
+}
+.innerPriceButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nameCards {
+  font-size: 22px;
+  font-family: "Inter";
+  margin: 0;
+  color: #f5f5f5;
+}
+.priceCards {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Inter";
+  color: #f5f5f5;
+}
+.btnCards {
+  width: 70px;
+  height: 40px;
+  background-color: rgba(147, 60, 36, 1);
+  border: 1px solid rgba(147, 60, 36, 1);
+  border-radius: 4px;
+  color: #f5f5f5;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.btnCards:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.input::placeholder {
+  color: #000;
+}
+@media (max-width:480px) {
+    .wrapSort {
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-between;
+margin: 0 10px 10px 10px;
+height: 40px;
+}
+.select {
+    font-size: 14px;
+    height: 20px;
+}
+.input {
+     border: 1px solid #ccc;
+     font-size: 12px;
+    font-family: "inter";
+    font-weight:normal;
+    border-radius: 4px;
+    width: 120px;
+    height: 15px;
+    outline: none;
+}
+}

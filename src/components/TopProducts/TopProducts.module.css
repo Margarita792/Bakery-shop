@@ -1,0 +1,193 @@
+.container {
+  padding-top: 30px;
+}
+.title {
+  font-size: 60px;
+  font-family: "Sansita Swashed", cursive;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 0 0 30px;
+}
+.wrapCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.innerCards {
+  background-image: url("../../assets/TopProducts/Rectangle69.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 300px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.innerImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgCards {
+  object-fit: cover;
+  height: 190px;
+  margin-top: 20px;
+}
+.priceCards {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: normal;
+  /* margin: 30px 0 0 20px; */
+}
+.nameCards {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: normal;
+  width: max-content;
+}
+.innerPriceButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+}
+.btnCards {
+  width: 70px;
+  height: 40px;
+  background-color: rgba(147, 60, 36, 1);
+  border: 1px solid rgba(147, 60, 36, 1);
+  border-radius: 4px;
+  color: #f5f5f5;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.btnCards:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media (max-width:1024px) {
+  .title {
+  font-size: 40px;
+  margin: 0 0 30px;
+}
+.wrapCards {
+  gap: 20px;
+}
+.innerCards {
+  height: 330px;
+  width: 290px;
+}
+.imgCards {
+  /* width: 200px; */
+  height: 160px;
+  margin-top: 10px;
+}
+.priceCards {
+  color: #f5f5f5;
+  font-size: 20px;
+}
+.nameCards {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: normal;
+  width: max-content;
+}
+.innerPriceButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  margin: 0 10px 0 10px;
+}
+.btnCards {
+  width: 70px;
+  height: 40px;
+  background-color: rgba(147, 60, 36, 1);
+  border: 1px solid rgba(147, 60, 36, 1);
+  border-radius: 4px;
+  color: #f5f5f5;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+}
+@media (max-width: 786px) {
+  .container {
+    padding-top: 20px;
+  }
+  .title {
+    font-size: 40px;
+    margin: 0 0 20px;
+  }
+  .wrapCards {
+    gap: 20px;
+  }
+  .innerCards {
+    height: 220px;
+    width: 200px;
+  }
+  .imgCards {
+    /* width: 120px; */
+    height: 120px;
+    margin-top: 10px;
+  }
+  .priceCards {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+  }
+  .nameCards {
+    font-size: 16px;
+    margin: 5px 0 5px 5px;
+    font-family: "Inter";
+    font-weight: normal;
+    width: max-content;
+  }
+  .innerPriceButton {
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+    margin: 0;
+  }
+  .btnCards {
+    width: 45px;
+    height: 28px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+  .innerCards {
+    height: 140px;
+    width: 120px;
+    gap: 8px;
+  }
+  .imgCards {
+    /* width: 80px; */
+    height: 70px;
+    margin-top: 10px;
+  }
+  .priceCards {
+    font-size: 10px;
+    margin: 0;
+  }
+  .nameCards {
+    font-size: 10px;
+    width: max-content;
+    margin: 0;
+  }
+  .btnCards {
+    width: 33px;
+    height: 22px;
+    font-size: 12px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,76 @@
+.title {
+  font-size: 60px;
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  margin: 40px 0 40px;
+  color: #f5f5f5;
+}
+.wrapCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.imgCards {
+  width: 300px;
+}
+.innerNamePrice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nameCards {
+  font-size: 29px;
+  font-family: "Inter";
+  color: #f5f5f5;
+  margin: 0;
+}
+.priceCards {
+  font-size: 25px;
+  font-family: "Inter";
+  color: #f5f5f5;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+    margin: 5px 0 15px;
+  }
+  .wrapCards {
+    gap: 20px;
+  }
+  .imgCards {
+    width: 250px;
+  }
+  .nameCards {
+    font-size: 19px;
+  }
+  .priceCards {
+    font-size: 19px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapCards {
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .title {
+    font-size: 20px;
+    margin: 15px 0 15px;
+  }
+  .imgCards {
+    width: 100px;
+  }
+  .nameCards {
+    font-size: 11px;
+    margin: 0;
+    font-weight: normal;
+  }
+  .priceCards {
+    font-size: 9px;
+    margin:0;
+    font-weight: normal;
+  }
+}

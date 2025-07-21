@@ -1,0 +1,51 @@
+
+.containerUserPage {
+    background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
+ justify-content: center; 
+   align-items: center; 
+ display: flex;
+ flex-direction: column;
+}
+.wrapUser {
+  display: flex;
+  flex-direction: column;
+  height: max-content;   
+  width: 270px;
+}
+.title {
+     font-size: 20px;
+      font-family: "inter";
+    font-weight:normal;
+    color: #f5f5f5;
+}
+.name {
+    font-size: 15px;
+    color:#f5f5f568;
+}
+.value {
+    font-size: 20px;
+    border-bottom: 1px solid #f5f5f585;
+    margin: 0;
+     color: rgba(233, 189, 140, 1)
+}
+@media (max-width:480px) {
+  .containerUserPage {
+padding: 0 0 10px 0;
+  }
+  .wrapUser {
+  width: 240px;
+}
+.title {
+     font-size: 18px;
+}
+.name {
+    font-size: 13px;
+}
+.value {
+    font-size: 18px;
+    border-bottom: 1px solid #f5f5f585;
+    margin: 0;
+     color: rgba(233, 189, 140, 1)
+}
+  
+}
