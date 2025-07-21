@@ -43,8 +43,8 @@ A frontend web application for an online bakery store with a homepage, product l
    npm run dev
 
 ## Screenshots
-![Homepage]("https://iili.io/FNWsT7a.png")
-![Product List]("https://iili.io/FNWQHAb.png")
+![Homepage](./Screenshot%202025-07-21%20223214.png)
+![Product List](./Screenshot%202025-07-21%20223420.png)
 
 ## 🇺🇦 Українська версія
 
