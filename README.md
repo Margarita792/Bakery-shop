@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Online Bakery Shop
 
 A frontend web application for an online bakery store with a homepage, product listing, filtering and sorting features, shopping cart, wishlist, user authentication, and profile page.
@@ -89,7 +89,3 @@ A frontend web application for an online bakery store with a homepage, product l
 3. Запусти локальний сервер:
    npm run dev
 
-=======
-# Bakery-shop
-Online bakery shop with a homepage, product listing with filtering and sorting, shopping cart, wishlist, authentication, and user profile page.
->>>>>>> bad977f10c236d94c545d1af5b9a6181e1bf866e
