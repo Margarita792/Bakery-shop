@@ -42,6 +42,9 @@ A frontend web application for an online bakery store with a homepage, product l
 3. Start the development server:
    npm run dev
 
+## Live Demo
+[View the website](https://online-bakery-shop.netlify.app)
+
 ## Screenshots
 ![Homepage](./Screenshot%202025-07-21%20223214.png)
 ![Product List](./Screenshot%202025-07-21%20223420.png)
