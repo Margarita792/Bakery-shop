@@ -32,15 +32,15 @@ function Header() {
 </div>
         <div className={style.innerIcons}>
           <Link to="/registerPage" className={style.link}>
-            <img className={style.iconUser} src={iconUser} alt="" />
+            <img className={style.iconUser} src={iconUser} alt="User" />
           </Link>
           <Link to="/wishlistPage" className={style.link}>
             <span className={style.wishlistLength}>{wishlist.length}</span>
-            <img className={style.iconWishlist} src={iconWishlist} alt="" />
+            <img className={style.iconWishlist} src={iconWishlist} alt="Wishlist" />
           </Link>
           <Link to="/cartPage" className={style.link}>
             <span className={style.cartLength}>{cart.length}</span>
-            <img className={style.iconCart} src={iconCart} alt="" />
+            <img className={style.iconCart} src={iconCart} alt="Cart" />
           </Link>
         </div>
 
