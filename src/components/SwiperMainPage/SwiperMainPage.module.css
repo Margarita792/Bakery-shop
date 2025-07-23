@@ -51,26 +51,26 @@
 }
 @media (max-width: 480px) {
     .wrapSlide1 {
-  height: 250px;
+  height: 350px;
 }
 .blackout {
-  height: 250px;
+  height: 350px;
   justify-content: end;
 }
 .wrapSlide2 {
-  height: 250px;
+  height: 350px;
 }
 .wrapSlide3 {
-  height: 250px;
+  height: 350px;
 }
 .title {
   font-size: 25px;
   margin-bottom: 0;
 }
 .button {
-  width: 150px;
-  height: 30px;
+  width: 160px;
+  height: 35px;
   font-size: 12px;
-  margin: 40px 0 20px 0;
+  margin: 70px 0 50px 0;
 }
 }
