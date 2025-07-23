@@ -15,8 +15,8 @@
 .textNav {
   font-family: "Poppins", sans-serif;
   margin: 0px;
-  color: rgba(93, 93, 93, 1);
-  font-weight: bolder;
+  color: rgb(48, 48, 48);
+  font-weight: normal;
   font-size: 22px;
   border: none;
   outline: none;
@@ -28,8 +28,12 @@
   transform: scale(1.2);
 }
 .imgLogo {
-  /* margin: 0px 138px 0px 68px; */
   width: 150px;
+}
+.menu {
+  display: flex;
+  gap: 60px;
+  transition: 0.3s;
 }
 .innerIcons {
   width: 160px;
@@ -38,24 +42,37 @@
   align-items: center;
   gap: 30px;
 }
+.iconUser {
+  width: 30px;
+  height: 28px;
+  transition: 0.3s ease;
+}
+.iconUser:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .iconWishlist {
-   transition: 0.3s ease;
-   position: relative;
-   bottom: 10px;
-   z-index: 1;
+  width: 28px;
+  height: 28px;
+  transition: 0.3s ease;
+  position: relative;
+  bottom: 10px;
+  z-index: 1;
 }
 .iconWishlist:hover {
-   cursor: pointer;
+  cursor: pointer;
   transform: scale(1.2);
 }
 .iconCart {
-   transition: 0.3s ease;
-   position: relative;
-   bottom: 10px;
-   z-index: 1;
+  width: 28px;
+  height: 28px;
+  transition: 0.3s ease;
+  position: relative;
+  bottom: 10px;
+  z-index: 1;
 }
 .iconCart:hover {
-   cursor: pointer;
+  cursor: pointer;
   transform: scale(1.2);
 }
 .icons {
@@ -82,7 +99,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: rgba(147, 60, 36, 1);
-  font-weight: bold;
+  font-weight: normal;
   width: 20px;
   height: 20px;
   background-color: rgba(233, 189, 141, 1);
@@ -92,13 +109,13 @@
   justify-content: center;
   z-index: 2;
 }
-.cartLength{
+.cartLength {
   position: relative;
-  right: 10px;
+  right: 6px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: rgba(147, 60, 36, 1);
-  font-weight: bold;
+  font-weight: normal;
   width: 20px;
   height: 20px;
   background-color: rgba(233, 189, 141, 1);
@@ -107,6 +124,38 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 5;
+}
+
+.lineBurger {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(93, 93, 93, 1);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+.burger.active .lineBurger:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.burger.active .lineBurger:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .lineBurger:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 1024px) {
@@ -144,46 +193,77 @@
     font-size: 18px;
   }
 
-  .nav {
+  .burger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
     flex-direction: column;
     gap: 10px;
-    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    align-items: center;
+  }
+
+  .show {
+    display: flex;
   }
 }
 @media (max-width: 480px) {
   .nav {
-    padding: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .innerIcons {
     width: 110px;
     gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .icons {
-    width: 18px;
-    height: 18px;
+  .iconUser,
+  .iconWishlist,
+  .iconCart {
+    width: 20px;
+    height: 20px;
   }
+
   .textNav {
     font-size: 16px;
     margin: 0;
   }
 
   .imgLogo {
-    width: 100px;
+    width: 90px;
   }
   .wishlistLength {
-  position: relative;
-  right: 10px;
-  bottom: 3px;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
-}
-.cartLength{
-  position: relative;
-  right: 10px;
-  bottom: 3px;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
+    position: relative;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+  .cartLength {
+    position: relative;
+    right: 6px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+  
+  .lineBurger {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(93, 93, 93, 1);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
 }
 }

@@ -3,10 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectProductsHomePage } from "../../redux/sliceProducts";
 import style from "../../components/TopProducts/TopProducts.module.css";
 import { addProduct } from "../../redux/sliceCart";
-import { useNavigate } from "react-router-dom";
 function TopProducts() {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const productsHomePage = useSelector(selectProductsHomePage); //получение массива из redux с помощью useSelector
   return (
     <>
@@ -25,7 +23,7 @@ function TopProducts() {
                     <p className={style.priceCards}>${item.price}</p>
                     <button
                       className={style.btnCards}
-                      onClick={()=>{dispatch(addProduct(item)); navigate("/cartPage")}}
+                      onClick={()=>{dispatch(addProduct(item))}}
                     >
                       Add
                     </button>

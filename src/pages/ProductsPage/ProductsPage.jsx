@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import style from "./ProductsPage.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectallProducts, sortCategoryProducts } from "../../redux/sliceProducts";
@@ -14,11 +14,11 @@ function ProductsPage() {
   const allProducts = useSelector(selectallProducts);
   const search = useSelector(selectSearch);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   return (
     <>
+    <div className = {style.container}>
       <Header />
-      <main className={style.mainContainer}>
+      <main className={style.mainWrap}>
         <section className={style.categories} >
           {["Cake","Muffins", "Croissant", "Bread"].map((category)=>{
             return(
@@ -43,13 +43,11 @@ function ProductsPage() {
                     <p className={style.priceCards}>${item.price}</p>
                     <img className={style.iconFavoriteCards}src={favorite} alt="favorite" onClick={() => {
                         dispatch(addToWishlist(item));
-                        navigate("/wishlistPage");
                       }}/>
                     <button
                       className={style.btnCards}
                       onClick={() => {
                         dispatch(addProduct(item));
-                        navigate("/cartPage");
                       }}
                     >
                       Add
@@ -61,6 +59,7 @@ function ProductsPage() {
         </section>
       </main>
       <Footer />
+      </div>
     </>
   );
 }

@@ -10,31 +10,34 @@ function UserPage() {
 
   return (
     <>
+    <div className = {style.container}>
       <Header />
-      <section className={style.containerUserPage}>
+      <section className={style.wrapperUserPage}>
         <h2 className={style.title}>Personal information</h2>
         {user.map((item, index) => {
           return (
             <div key={index} className={style.wrapUser}>
-              {currentUser && <>
-              </>}
-              <p className={style.name}>Name</p>
-              <p className={style.value}>{item.firstName}</p>
-              <p className={style.name}>Last Name</p>
-              <p className={style.value}>{item.lastName}</p>
-              <p className={style.name}>User name</p>
-              <p className={style.value}>{item.userName}</p>
-              <p className={style.name}>Email</p>
-              <p className={style.value}>{item.email}</p>
-              <p className={style.name}>Password</p>
-              <p className={style.value}>{item.password}</p>
+             {currentUser && (
+  <div className={style.wrapUser}>
+    <p className={style.name}>Name</p>
+    <p className={style.value}>{currentUser.firstName}</p>
+    <p className={style.name}>Last Name</p>
+    <p className={style.value}>{currentUser.lastName}</p>
+    <p className={style.name}>User name</p>
+    <p className={style.value}>{currentUser.userName}</p>
+    <p className={style.name}>Email</p>
+    <p className={style.value}>{currentUser.email}</p>
+    <p className={style.name}>Password</p>
+    <p className={style.value}>{currentUser.password}</p>
+  </div>
+)}
             </div>
           );
         })}
       </section>
       <Footer />
+      </div>
     </>
   );
 }
-
 export default UserPage;

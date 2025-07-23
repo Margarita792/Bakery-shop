@@ -15,8 +15,7 @@ function RegisterPage() {
   } = useForm();
 
   const onSubmit = (data) => {
-    dispatch(registerUser(data));
-    navigate("/userPage");
+    dispatch(registerUser(data))
   };
 
   return (
@@ -47,10 +46,10 @@ function RegisterPage() {
                   message: "Invalid email format",
                 },
               })}
-              type="mail"
+              type="email"
               placeholder="Email"
             />
-            {errors.Email && (
+            {errors.email && (
               <p className={style.textError}>{errors.Email.message ||"This field is required}This field is required"}</p>
             )}
              <input
@@ -65,7 +64,7 @@ function RegisterPage() {
               type="password"
               placeholder="Password"
             />
-            {errors.Password && (
+            {errors.password && (
               <p className={style.textError}>This field is required</p>
             )}
             <input
@@ -74,7 +73,7 @@ function RegisterPage() {
               type="password"
               placeholder="Confirm password"
             />
-            {errors.ConfirmPassword && (
+            {errors.confirmPassword && (
               <p className={style.textError}>This field is required</p>
             )}
             <input className={style.inputSubmit} type="submit" value="Create" />
@@ -93,5 +92,4 @@ function RegisterPage() {
     </>
   );
 }
-
 export default RegisterPage;

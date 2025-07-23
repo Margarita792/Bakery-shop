@@ -1,20 +1,27 @@
-import React from "react";
+import { useEffect } from "react";
 import style from "./LoginPage.module.css";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { loginUser } from "../../redux/sliceUser";
+import { loginUser, selectCurrentUser } from "../../redux/sliceUser";
 function LoginPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const currentUser = useSelector(selectCurrentUser);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => dispatch(loginUser(data));
+
+  useEffect(()=>{
+    if(currentUser!= null){
+navigate("/userPage")
+    }
+  },[currentUser,navigate]);
   return (
     <> 
     <section className={style.containerLogin}>

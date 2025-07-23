@@ -1,10 +1,16 @@
 
-.containerUserPage {
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrapperUserPage {
     background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
  justify-content: center; 
    align-items: center; 
  display: flex;
  flex-direction: column;
+ flex-grow:1;
 }
 .wrapUser {
   display: flex;

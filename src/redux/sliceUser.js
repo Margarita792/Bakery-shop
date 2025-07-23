@@ -13,7 +13,7 @@ export const sliceUser = createSlice({
     loginUser: (state, action) => {
       for (const item of state.user) {
         if (
-          item.userName === action.payload.login &&
+          item.userName.toLowerCase() === action.payload.login.toLowerCase() &&
           item.password === action.payload.password
         ) {
           state.currentUser = item;

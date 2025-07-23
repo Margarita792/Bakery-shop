@@ -1,13 +1,12 @@
-/* .header {
-  background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 77px;
-  width: 100%;
+.container {
+  height: 100vh;
   display: flex;
-  align-items: center;
-} */
-.mainContainer {
+  flex-direction: column;
+}
+.mainWrap {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
   padding-bottom: 20px;
   background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
 }
