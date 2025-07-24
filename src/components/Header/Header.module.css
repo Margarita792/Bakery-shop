@@ -86,7 +86,7 @@
 
 .inputSearch {
   position: absolute;
-  transform: translateY(-18%);
+  transform: translate(-18%);
   transition: 0.3s;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -221,7 +221,7 @@
   .nav {
     flex-wrap: wrap;
     gap: 20px;
-    padding: 3px;
+    /* padding: 3px; */
     height: 40px;
   }
   .innerIcons {

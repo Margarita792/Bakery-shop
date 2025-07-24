@@ -1,4 +1,4 @@
-.wrap {
+/* .wrap {
   background-image: url("../../assets/AboutUs/different-cookies-top-view-dark-surface-with-copy-space.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,23 +9,33 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-}
-.inner {
+} */
+ .wrap{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+ }
+ .img {
+  width: 40vw;
+  border-radius:5px;
+ }
+.inner {
+  width: 100%;
 }
 .title {
   color: rgba(245, 245, 245, 1);
   font-size: 68px;
   font-family: "Sansita Swashed", cursive;
+  font-weight: normal;
+  margin: 0;
 }
 .text {
   color: rgba(185, 185, 185, 1);
-  width: 300px;
-  font-size: 24px;
+  width: 100%;
+  font-size: 34px;
   text-align: center;
+  text-align: start;
 }
 .button {
   width: 190px;
@@ -43,19 +53,56 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+@media (max-width:1024px) {
+  .wrap{
+  gap: 30px;
+  padding: 20px;
+ }
+.inner {
+  width: 100%;
+}
+.title {
+  color: rgba(245, 245, 245, 1);
+  font-size: 50px;
+}
+.text {
+  color: rgba(185, 185, 185, 1);
+  width: 100%;
+  font-size: 20px;
+}
+}
+@media (max-width:768px) {
+   .wrap{
+  gap: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+ }
+.inner {
+  width: 100%;
+}
+.img{
+    width: 100%;
+  }
+.title {
+  font-size: 28px;
+}
+.text {
+  font-size: 22px;
+}
+}
 @media (max-width: 480px) {
   .wrap {
-    height: 240px;
+    gap: 15px;
+  padding: 10px;
+  }
+  .img{
     width: 100%;
-    margin-top: 10px;
   }
   .title {
-    font-size: 28px;
+    font-size: 22px;
   }
   .text {
-    color: rgb(219, 218, 218);
-    width: 250px;
-    font-size: 12px;
+    font-size: 11px;
   }
   .button {
     width: 120px;

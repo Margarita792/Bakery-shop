@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 .mainWrap {
+  padding-top: 70px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -132,6 +133,10 @@
 }
 }
 @media (max-width:480px) {
+  .mainWrap {
+  padding-top: 40px;
+ 
+}
 .categories {
   flex-direction: column;
   gap: 20px;

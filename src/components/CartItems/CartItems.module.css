@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+   padding-top: 70px;
 }
 .wrapProductsCart {
   width: 400px;

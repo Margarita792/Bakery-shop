@@ -9,7 +9,7 @@ function TopProducts() {
   return (
     <>
       <main className={style.container}>
-        <h1 className={style.title}>Top Products</h1>
+        {/* <h1 className={style.title}>Top Products</h1> */}
         <section className={style.wrapCards}>
           {productsHomePage.slice(0, 6).map((item, index) => {
             return (

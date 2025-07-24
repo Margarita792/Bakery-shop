@@ -20,6 +20,7 @@ function RegisterPage() {
 
   return (
     <>
+    <div className={style.mainContainer}>
       <Header />
       <section className={style.containerRegister}>
         <p className={style.title}>Create an Account</p>
@@ -89,6 +90,7 @@ function RegisterPage() {
         </p>
       </section>
       <Footer />
+      </div>
     </>
   );
 }

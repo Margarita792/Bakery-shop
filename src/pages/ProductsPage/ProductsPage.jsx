@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import style from "./ProductsPage.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectallProducts, sortCategoryProducts } from "../../redux/sliceProducts";
@@ -20,7 +18,7 @@ function ProductsPage() {
       <Header />
       <main className={style.mainWrap}>
         <section className={style.categories} >
-          {["Cake","Muffins", "Croissant", "Bread"].map((category)=>{
+          {["All","Cake","Muffins", "Croissant", "Bread"].map((category)=>{
             return(
               <p key = {category} className={style.textCategories} onClick={()=>{dispatch(sortCategoryProducts({value:category}))}}>{category}</p>
             )

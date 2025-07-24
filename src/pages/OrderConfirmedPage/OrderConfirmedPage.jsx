@@ -4,12 +4,14 @@ import Header from "../../components/Header/Header";
 import style from "./OrderConfirmedPage.module.css";
 function OrderConfirmedPage() {
   return (<>
+  <div className = {style.container}>
     <Header/>
     <div className={style.wrapOrderConfirmed}>
       <h1 className={style.titleOrderConfirmed}>Order Confirmed</h1>
       <img className={style.imgOrderConfirmed} src={icon} alt=""></img>
     </div>
     <Footer/>
+    </div>
   </>);
 }
 

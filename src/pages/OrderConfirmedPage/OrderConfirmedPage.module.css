@@ -1,10 +1,16 @@
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .wrapOrderConfirmed {
   background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 0 20px 0;
+  flex-grow: 1;
+  padding: 70px 0 50px 0;
 }
 .titleOrderConfirmed {
   font-size: 40px;

@@ -1,16 +1,20 @@
-.containerRegister {
+.mainContainer{
+height: 100vh;
+display: flex;
+flex-direction: column;
+}.containerRegister {
  background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
  display: flex;
  justify-content: center; 
    align-items: center; 
  flex-direction: column;
-  
+ flex-grow: 1;
+  padding-top: 70px;
 }
 .wrapRegister{
     display: flex;
-  /* flex-direction: column;s */
   align-items: center; 
-  min-height: 40vh;   
+  height: 380px;   
   width: 300px;  
   text-align: center;      
 }

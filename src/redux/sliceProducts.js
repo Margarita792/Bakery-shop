@@ -144,9 +144,14 @@ const sliceProducts = createSlice({
     },
     sortCategoryProducts: (state, action) => {
       const selectedCategory = action.payload.value;
+      if(selectedCategory==="All"){
+        state.allProducts = state.copyAllProducts;
+      }
+      else{
       state.allProducts = state.copyAllProducts.filter(
         (item) => item.name == selectedCategory
       );
+      }
     },
   },
 });

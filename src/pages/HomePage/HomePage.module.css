@@ -1,11 +1,8 @@
-/* .header {
-  background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 100%;
-} */
- .container {
+.mainContainerHomePage {
+height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrapHomePage {
   background-image: url("../../assets/Home/pexels-feelartfeelant-1028714.jpg");
  }
