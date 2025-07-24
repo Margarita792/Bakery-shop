@@ -134,12 +134,13 @@
 }
 @media (max-width:480px) {
   .mainWrap {
-  padding-top: 40px;
+  padding-top: 60px;
  
 }
 .categories {
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 10px;
   
 }
 .textCategories {
