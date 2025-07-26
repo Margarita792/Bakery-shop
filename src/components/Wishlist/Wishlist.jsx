@@ -31,13 +31,12 @@ function Wishlist() {
                         navigate("/cartPage");
                       }}
                     >
-                      Add
+                     Buy
                     </button>
            </div>
         </div>
-        
   </> ) })}
-   
+   <button className={style.buttonBack }>Back to products</button>
 </section>
 </main>)
 }

@@ -80,7 +80,7 @@ cursor: pointer;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: start;
+  align-items: end;
 }
 .btnAdd {
   width: 50px;
@@ -93,6 +93,20 @@ cursor: pointer;
   transition: 0.3s ease;
 }
 .btnAdd:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.buttonBack {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(147, 60, 36, 1);
+  border: 1px solid rgba(147, 60, 36, 1);
+  border-radius: 4px;
+  color: #f5f5f5;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.buttonBack:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -141,8 +155,8 @@ cursor: pointer;
     gap: 30px;
   }
   .imgProductsCart {
-    width: 85px;
-    height: 70px;
+    width: 100px;
+    height: 80px;
   }
   .nameProductsCart {
     font-size: 16px;
@@ -159,8 +173,8 @@ cursor: pointer;
     height: 18px;
   }
   .btnAdd {
-  width: 35px;
-  height: 20px;
-  font-size: 12px;
+  width: 45px;
+  height: 28px;
+  font-size: 14px;
 }
 }
