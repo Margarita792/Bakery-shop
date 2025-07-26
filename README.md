@@ -46,7 +46,7 @@ A frontend web application for an online bakery store with a homepage, product l
 [View the website](https://online-bakery-shop.netlify.app)
 
 ## Screenshots
-![Homepage](./Screenshot%202025-07-21%20223214.png)
+![Homepage](./Screenshot%202025-07-26%20101430.png)
 ![Product List](./Screenshot%202025-07-21%20223420.png)
 
 ## 🇺🇦 Українська версія
