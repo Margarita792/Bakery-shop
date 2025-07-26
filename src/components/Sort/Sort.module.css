@@ -7,6 +7,7 @@ margin: 0 30px 20px 30px;
 height: 40px;
 }
 .select {
+   background-color:rgba(192, 191, 191, 0.429);
     font-size: 18px;
     font-family: "inter";
     font-weight:normal;
@@ -14,9 +15,14 @@ height: 40px;
     border: none;
     border-radius: 4px;
     height: 30px;
+     color: #ccc;
+}
+.option{
+  color: black;
 }
 .input {
-     border: 1px solid #ccc;
+  background-color:rgba(192, 191, 191, 0.429);
+     border: none;
      font-size: 18px;
     font-family: "inter";
     font-weight:normal;
@@ -68,7 +74,7 @@ height: 40px;
   cursor: pointer;
 }
 .input::placeholder {
-  color: #000;
+ color: #ccc;
 }
 @media (max-width:480px) {
     .wrapSort {
@@ -81,16 +87,17 @@ height: 40px;
 }
 .select {
     font-size: 14px;
-    height: 20px;
+    height: 24px;
 }
 .input {
-     border: 1px solid #ccc;
+    background-color:rgba(192, 191, 191, 0.429);
+     border: none;
      font-size: 12px;
     font-family: "inter";
     font-weight:normal;
     border-radius: 4px;
     width: 120px;
-    height: 15px;
+    height: 20px;
     outline: none;
 }
 }

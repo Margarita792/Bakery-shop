@@ -82,6 +82,10 @@
   cursor: pointer;
 }
 @media (max-width: 1024px) {
+  .mainWrap {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
   .wrapCards {
   gap: 20px;
 }
@@ -134,9 +138,11 @@
 }
 @media (max-width:480px) {
   .mainWrap {
-  padding-top: 60px;
- 
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
+ 
+
 .categories {
   flex-wrap: wrap;
   gap: 20px;
@@ -144,31 +150,31 @@
   
 }
 .textCategories {
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
 }
 .wrapCards {
-  gap: 12px;
+  gap: 18px;
 }
 .imgCards {
-  width: 110px;
-  height: 80px;
+  width: 160px;
+  height: 110px;
 }
 .iconFavoriteCards {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   left: 10px;
 }
 .nameCards {
-  font-size: 15px;
+  font-size: 18px;
 }
 .priceCards {
-  font-size: 12px;
+  font-size: 15px;
 }
 .btnCards {
-  width: 33px;
-  height: 22px;
-  font-size: 12px;
+  width: 40px;
+  height: 30px;
+  font-size: 16px;
   padding: 0;
 }
 }

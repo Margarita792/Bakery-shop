@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Category.module.css";
-import cake from '../../assets/Category/delicious-chocolate-birthday-cake-with-candles.png';
-import muffins from '../../assets/Category/409991117_c5114b2d-479e-4576-a6d4-639ff117f4db-removebg-preview.png';
+import cake from '../../assets/Category/delicious-chocolate-birthday-cake-with-candlescopy.png';
+import muffins from '../../assets/Category/409991117_c5114b2d-479e-4576-a6d4-639ff117f4db-removebg-previewcopy.png';
 import croissant from '../../assets/Category/406619397_f196003b-d4cf-4e01-8819-0a6e480a7f3a-removebg-preview.png';
 import bread from '../../assets/Category/—Pngtree—white bread loaf with three_20313466.png';
 import { useDispatch } from "react-redux";

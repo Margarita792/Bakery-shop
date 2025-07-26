@@ -5,7 +5,7 @@ import style from "../../components/TopProducts/TopProducts.module.css";
 import { addProduct } from "../../redux/sliceCart";
 function TopProducts() {
   const dispatch = useDispatch();
-  const productsHomePage = useSelector(selectProductsHomePage); //получение массива из redux с помощью useSelector
+  const productsHomePage = useSelector(selectProductsHomePage); 
   return (
     <>
       <main className={style.container}>
@@ -25,7 +25,7 @@ function TopProducts() {
                       className={style.btnCards}
                       onClick={()=>{dispatch(addProduct(item))}}
                     >
-                      Add
+                      Buy
                     </button>
                   </div>
                 </section>

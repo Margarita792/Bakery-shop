@@ -30,10 +30,10 @@ function Sort() {
           className={style.select}
         >
           <option value="byDefault">Sort by default</option>
-          <option value="cheap"> cheap </option>
-          <option value="expensive">expensive</option>
-          <option value="az">A-Z</option>
-          <option value="za">Z-A</option>
+          <option className={style.option} value="cheap"> cheap </option>
+          <option  className={style.option} value="expensive">expensive</option>
+          <option  className={style.option} value="az">A-Z</option>
+          <option  className={style.option} value="za">Z-A</option>
         </select>
       </div>
       <div></div>

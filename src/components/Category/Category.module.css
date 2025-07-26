@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 60px;
+  gap: 70px;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .wrapCategory {
   display: flex;
@@ -20,8 +20,9 @@
   transition: 0.3s;
 }
 .img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
+
 .title {
   font-size: 22px;
   color: white;
@@ -52,7 +53,7 @@
 }
 @media (max-width:480px) {
     .mainContainer {
-    gap: 40px;
+    gap: 50px;
   }
   .img {
     width: 130px;

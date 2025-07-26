@@ -18,7 +18,7 @@ function HomePage() {
             <SwiperMainPage/>
             <Category/>
         <AboutUs />
-        <TopProducts />
+        {/* <TopProducts /> */}
         {/* <FeaturedTrears /> */}
         </div>
         <Footer />

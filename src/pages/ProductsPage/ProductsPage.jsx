@@ -48,7 +48,7 @@ function ProductsPage() {
                         dispatch(addProduct(item));
                       }}
                     >
-                      Add
+                      Buy
                     </button>
                   </div>
                 </div>
