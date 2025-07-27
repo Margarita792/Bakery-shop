@@ -2,7 +2,7 @@ import React from "react";
 import style from './Wishlist.module.css'
 import { selectWishlist, deleteProductFromWishlist } from "../../redux/sliceWishlist";
 import { useSelector, useDispatch } from "react-redux";
-import deleteIcon from '../../assets/Cart/trash-bin_449943.png'
+import deleteIcon from '../../assets/Cart/trash-bin_449943.png';
 import { addProduct } from "../../redux/sliceCart";
 import { useNavigate } from "react-router-dom";
 function Wishlist() {
@@ -35,7 +35,7 @@ function Wishlist() {
            </div>
         </div>
   </> ) })}
-   <button className={style.buttonBack} onClick = {()=>{navigate("/productsPage")}}>Back to products</button>
+   <button className={style.buttonBack} onClick = {()=>{navigate("/productsPage")}}> Back to products</button>
 </section>
 </main>)
 }
