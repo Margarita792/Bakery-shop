@@ -28,7 +28,6 @@ function Wishlist() {
                       className={style.btnAdd}
                       onClick={() => {
                         dispatch(addProduct(item));
-                        navigate("/cartPage");
                       }}
                     >
                      Buy
