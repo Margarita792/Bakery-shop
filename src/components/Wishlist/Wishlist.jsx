@@ -36,7 +36,7 @@ function Wishlist() {
            </div>
         </div>
   </> ) })}
-   <button className={style.buttonBack }>Back to products</button>
+   <button className={style.buttonBack} onClick = {()=>{navigate("/productsPage")}}>Back to products</button>
 </section>
 </main>)
 }

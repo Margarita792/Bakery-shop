@@ -28,6 +28,7 @@ function Category() {
         <img src={bread} alt="Bread" className = {style.img}/>
         <h1 className = {style.title}>Bread</h1>
       </section>
+      <button className={style.buttonProductCatalog} onClick = {()=>{navigate("/productsPage")}}>Product Catalog</button>
     </main>
   );
 }

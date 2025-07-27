@@ -3,9 +3,11 @@ import style from "./CartItems.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { changeQtyItemProduct, selectCart, decrementQtyProductItem,incrementQtyProductItem,deleteProductItem} from "../../redux/sliceCart";
 import TotalPrice from './TotalPrice/TotalPrice';
+import { useNavigate } from 'react-router-dom';
 function CartItems() {
    const cart = useSelector(selectCart);
    const dispatch = useDispatch();
+   const navigate = useNavigate();
   return (
     <main className={style.mainContainer}>
         <h1 className={style.title}>Cart</h1>
@@ -33,6 +35,7 @@ function CartItems() {
    ) })}
 </section>
 <TotalPrice/>
+<button className={style.buttonBack } onClick = {()=>{navigate("/productsPage")}}>Back to products</button>
 </main>
   )
 }
